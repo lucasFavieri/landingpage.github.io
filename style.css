@@ -1,0 +1,755 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+}
+
+/*------------------- Aux Clases ----------------------*/
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+.line-text{
+    position: relative;
+    display: inline-block;
+    color: #52aaa7;
+}
+
+.w100{
+    width: 100%;
+    float: left;
+    padding: 0 10px;
+}
+
+.w60{
+    width: 60%;
+    float: left;
+    padding: 0 10px;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+}
+
+.w40{
+    width: 40%;
+    float: left;
+    padding: 0 10px;
+}
+
+.w33{
+    width: 33.3%;
+    float: left;
+    padding: 0 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+/*------------------- Aux Clases ----------------------*/
+
+/*------------------- Header --------------------------*/
+
+header{
+    padding: 10px 0;
+}
+
+.logo{
+    float: left;
+}
+
+.logo a{
+    font-weight: normal;
+    font-size: 23px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-desktop{
+    float: right;
+}
+
+.menu-desktop ul{
+    position: relative;
+    padding: 8px 0;
+}
+
+.menu-desktop li{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.menu-desktop li a{
+    color: black;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.menu-desktop li a:hover{
+    text-decoration: underline;
+}
+
+.menu-desktop .selected{
+    font-weight: bold;
+}
+
+.menu-mobile{
+    display: none;
+    float: right;
+}
+
+.menu-mobile ul{
+    display: none;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 999;
+    text-align: center;
+}
+
+.menu-mobile li{
+    padding: 10px 0;
+    border: 1px solid black;
+}
+
+.menu-mobile li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.menu-mobile h2{
+    cursor: pointer;
+}
+
+.menu-mobile .selected-mobile{
+    background-color: #52aaa7;
+}
+
+/*------------------- Header ----------------------*/
+
+
+/*------------------------ Section Main Banner --------------------------  */
+
+section.main-banner{
+    width: 100%;
+    padding: 140px 0  200px 0;
+    background-image: url(../Landing-page/images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+section.main-banner > .container{
+    position: relative;
+    z-index: 2;
+}
+
+.overlay{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+section.main-banner h2{
+    color: #52aaa7;
+    font-size: 50px;
+    font-weight: normal;
+
+}
+
+section.main-banner p{
+    color: white;
+    text-align: left;
+    padding-top: 15px;
+}
+
+/*------------------------ Section Main Banner --------------------------  */
+
+/*------------------------ Perks ----------------------------------------  */
+
+section.perks{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.line-text > div{
+    position: absolute;
+    width: 35%;
+    height: 3px;
+    top: 0;
+    left: 0;
+    background-color: #52aaa7;
+}
+
+.line-text h2{
+    font-size: 27px;
+    font-weight: normal;
+}
+
+.box-icon-single{
+    float: left;
+    width: 33.3%;
+    padding: 30px 40px;
+}
+.box-icon-single h2{
+    color: rgb(148, 82, 27);
+}
+
+.box-icon-single p{
+    color: #646464;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+/*------------------------ Perks ----------------------------------------  */
+
+/*------------------------ Info -----------------------------------------  */
+
+.info{
+    background-color: rgb(225, 225, 225);
+    padding: 30px 0;
+}
+
+.about-container p{
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.avatar-box{
+    padding: 30px 0;
+}
+
+.img-avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-image: url(../Landing-page/images/Lucas\ Photo.jpg);
+    float: left;
+}
+
+.avatar-description{
+    width: calc(100% - 70px);
+    float: right;
+    padding: 0 10px;
+}
+
+.avatar-description h3{
+    font-weight: normal;
+    font-style: italic;
+}
+
+.avatar-box p{
+    font-weight: lighter;
+}
+
+/*------------------------ Info -----------------------------------------  */
+
+/*------------------------ Subscribe ------------------------------------  */
+
+section.subscribe{
+    background-color: #52aaa7;
+    padding: 20px 0;
+}
+
+.subscribe-form input[type=text]{
+    width: calc(100% - 120px);
+    height: 40px;
+    background: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.subscribe-form input[type=submit]{
+    width: 120px;
+    height: 40px;
+    background: #1d6c64;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 16px; 
+}
+
+.subscribe-form input[type=submit]:hover{
+    color: #52aaa7;
+}
+
+.subscribe-text{
+    color: white;
+}
+
+/*------------------------ Subscribe ------------------------------------  */
+
+/*------------------------ Cards ---------------------------------------- */
+
+section.cards{
+    padding: 30px 0;
+}
+
+.card-img1{
+    width: 100%;
+    height: 150px;
+    background-image: url(../Landing-page/images/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-img2{
+    width: 100%;
+    height: 150px;
+    background-image: url(../Landing-page/images/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-img3{
+    width: 100%;
+    height: 150px;
+    background-image: url(../Landing-page/images/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-box-single{
+    width: 33.3%;
+    float: left;
+    padding: 50px;
+}
+
+.card-box-single p{
+    font-weight: lighter;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
+}
+
+.card-box-single h2{
+    font-weight: lighter;
+}
+
+/*------------------------ Cards -----------------------------------------  */
+
+/*------------------------ Footer ----------------------------------------  */
+
+footer.footer1{
+    padding: 20px 0;
+    background-color: #52aaa7;
+    color: white;
+}
+
+.footer1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer1 p{
+    padding: 5px;
+}
+
+div.group-icons a{
+    margin: 10px;
+}
+
+footer.footer2{
+    padding: 10px 0;
+    background-color: #1d6c64;
+    text-align: center;
+}
+
+.footer2 h2{
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+/*------------------------ Footer ----------------------------------------  */
+
+/*------------------------ Page About ----------------------------------------  */
+/*------------------------ Page About Title----------------------------------------  */
+
+section.about-page-title{
+    padding: 30px;
+    width: 100%;
+    min-height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.about-page-title h2{
+    color: #44D4C5;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.about-page-title p{
+    font-weight: lighter;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+}
+
+.about-page-title > .container{
+    position: relative;
+    z-index: 101;
+}
+
+.overlay__about-page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 101;
+}
+
+/*------------------------ Page About Title----------------------------------------  */
+
+/*------------------------ News ----------------------------------------  */
+
+.about__news{
+    padding: 30px;
+}
+
+.about__news-single img{
+    width: 50%;
+    max-width: 100%;
+    float: left;
+}
+
+.about__news-single p{
+    font-size: 16px;
+    padding: 10px 15px;
+    float: left;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.p-news-single{
+    padding: 10px 15px;
+}
+
+/*------------------------ News----------------------------------------  */
+
+/*------------------------ Paralax ----------------------------------------  */
+
+section.paralax{
+    padding: 30px 0;
+    width: 100%;
+    min-height: 200px;
+    background-image: url(../Landing-page/images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.paralax h2.paralax-efect{
+    border: 1px solid #44D4C5;
+    padding: 5px 25px;
+    color: #44D4C5;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.paralax p{
+    color: white;
+    padding: 15px 0;
+}
+
+/*------------------------ Paralax----------------------------------------  */
+
+/*------------------------ Team----------------------------------------  */
+
+section.about__team{
+    padding: 40px 0;
+}
+
+.about__team-container{
+    margin-top: 30px;
+}
+
+.team-circle-single{
+    width: 33.3%;
+    float: left;
+    padding: 0 20px;
+}
+
+.about__team-img{
+    position: relative;
+    width: 60%;
+    padding-top: 60%;
+    margin: 0 auto;
+    background-image: url(../Landing-page/images/Lucas\ Favieri\ photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.team-circle-wraper{
+    text-align: center;
+}
+
+.team-circle-wraper h2{
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+.team-circle-wraper p{
+    font-weight: lighter;
+}
+
+/*------------------------ Team----------------------------------------  */
+
+/*------------------------ Final ----------------------------------------  */
+
+section.about__final{
+    padding: 30px 0;
+    background-color: rgb(225, 225, 225);
+    border-top: 2px solid #ccc;
+}
+
+.text-card{
+    position: relative;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.text-card img{
+    max-width: 100%;
+}
+
+.text-card h3{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    font-weight: normal;
+}
+
+section.about__final p{
+    margin-top: 15px;
+    font-weight: lighter;
+}
+
+/*------------------------ Final ----------------------------------------  */
+
+/*------------------------ Page About ----------------------------------------  */
+/*------------------------ Page Contact ----------------------------------------  */
+
+/*------------------------ Contact Title ----------------------------------------  */
+
+section.contact__title{
+    padding: 30px;
+    width: 100%;
+    min-height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contact__title > .container{
+    position: relative;
+    z-index: 101;
+}
+
+.overlay__contact-page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 100;
+}
+
+.contact__title h2{
+    color: #44D4C5;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.contact__title p{
+    font-weight: lighter;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+}
+
+.contact{
+    padding: 30px 0;
+    min-height: 400px;
+}
+
+.form h2{
+    background: #DDDDDD;
+    text-align: center;
+    color: #ACAC9D;
+    font-size: 17px;
+    font-weight: normal;
+    border-left: 5px solid #CCCCCC;
+    border-right: 5px solid #CCCCCC;
+    padding: 4px 0;
+}
+
+.form form{
+    margin-top: 10px;
+}
+
+.form input[type=text]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-bottom: 15px;
+}
+
+.form input[type=email]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-bottom: 15px;
+}
+
+.form textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+
+.tags-form{
+    padding-left: 50px;
+}
+
+.tags-form p.contact-text{
+    font-weight: lighter;
+}
+
+.tags-form p.contact-tag{
+    color: white;
+    background: #249B8F;
+    text-align: center;
+    margin-top: 6px;
+    padding: 8px 4px;
+}
+
+.tags-form p{
+    font-weight: normal;
+}
+
+.tags-form h2{
+    font-weight: normal;
+}
+/*------------------------ Contact Title ----------------------------------------  */
+
+
+/*------------------------ Page Contact ----------------------------------------  */
+/*------------------------ Media Querrys ----------------------------------------  */
+
+@media screen and (max-width: 768px){
+    .box-icon-single{
+        width: 100%;
+    }
+
+    .team-container > .w50{
+        width: 100%;
+    }
+
+    .about-container > .w50{
+        width: 100%
+    }
+
+    .w33, .w40, .w50, .w60, .w100{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-box-single{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .footer1{
+        text-align: center;
+    }
+
+    .about__news-single img{
+        width: 100%;
+    }
+    
+    .about__news-single p{
+        width: 100%;
+    }
+
+    .text-card{
+        width: 100%;
+    }
+
+    .form input[type=text]{
+        margin-bottom: 0;
+    }
+
+    .form input[type=email]{
+        margin-bottom: 0;
+    }
+    
+    .form textarea{
+        margin-bottom: 0;
+    }
+
+    .tags-form{
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .menu-mobile{
+        display: block;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .team-circle-single{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
